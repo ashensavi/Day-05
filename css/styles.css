@@ -1,6 +1,6 @@
 .container{
     position: relative;
-    height: 400px;
+    height: 450px;
     width:20% !important;
     border: 1px solid red;
 }
@@ -13,8 +13,11 @@
 }
 .buttonGrid{
     position: relative;
-    margin-top:30%;
-    border: 1px solid blue;
-    height:300px;
+    margin-top:25%;
+    height:350px;
     width: 125% !important;
 } 
+.btnClear{
+    position: relative;
+    left: 105%;
+}

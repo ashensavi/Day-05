@@ -21,91 +21,73 @@
     <input type="text" id="txtNumber01" placeholder="Number 01">
     <input type="text" id="txtNumber02" placeholder="Number 02">
     <input type="text" name="operator" id="operator" placeholder="Operator">
-    <input type="button" value="Calculate" onclick="calc()">
+    <!-- <input type="button" value="Calculate" onclick="calc()"> -->
 
-
-
-
-<div class="text-center">
-    <div class="row">
-      <div class="col">
-        <button type="button" id="3"class=" btn btn-primary btn-lg" onclick="getVal()">3</button>
-        <button type="button" id="2"class="btn btn-primary btn-lg" onclick="getVal()">2</button>
-        <button type="button" id="1"class="btn btn-primary btn-lg">1</button>
-      </div>
-      <div class="row">
-        <div class="col">
-        <button type="button" id="6"class="btn1 btn btn-primary btn-lg">6</button>
-        <button type="button" id="5"class="btn1 btn btn-primary btn-lg">5</button>
-        <button type="button" id="4"class="btn1 btn btn-primary btn-lg">4</button>
-    </div>
-      </div>
-      <div class="row">
-        <div class="col">
-        <button type="button" id="9"class="btn btn btn-primary btn-lg">9</button>
-        <button type="button" id="8"class="btn btn btn-primary btn-lg">8</button>
-        <button type="button" id="7"class="btn btn btn-primary btn-lg">7</button>
-    </div>
-      </div>
-    </div>
-  </div>
+    
 
   <div class="container">
   <div class="displayContainer">
-    <div class="buttonGrid">
+    <h1 id="displayValue" class="bg-secondary text-light text-center"></h1>
+    <button type="button" id="clearDisplay" class="btnClear btn btn-danger btn-lg">C</button>
+    <div class="buttonGrid text-center">
       <div class="container1 mt-5">
         <div class="row">
           <div class="col">
-            <button type="button" id="7"class="btn btn btn-primary btn-lg">7</button>
+            <button type="button" id="7"class="btn btn btn-primary btn-lg" onclick="handleClick(7)">7</button>
           </div>
           <div class="col">
-            <button type="button" id="8"class="btn btn btn-primary btn-lg">8</button>
+            <button type="button" id="8"class="btn btn btn-primary btn-lg" onclick="handleClick('8')">8</button>
           </div>
           <div class="col">
-            <button type="button" id="9"class="btn btn btn-primary btn-lg">9</button>
+            <button type="button" id="9"class="btn btn btn-primary btn-lg" onclick="handleClick('9')">9</button>
           </div>
           <div class="col">
-            <button type="button" id="/"class="btn btn btn-success btn-lg">/</button>
+            <button type="button" id="/"class="btn btn btn-success btn-lg "  onclick="handleClick('/')">/</button>
           </div>
         </div>
-        <div class="row">
+        <div class="row mt-4">
           <div class="col">
-            <button type="button" id="4"class="btn1 btn btn-primary btn-lg">4</button>
+            <button type="button" id="4"class="btn1 btn btn-primary btn-lg"  onclick="handleClick('4')">4</button>
           </div>
           <div class="col">
-            <button type="button" id="5"class="btn1 btn btn-primary btn-lg">5</button>
+            <button type="button" id="5"class="btn1 btn btn-primary btn-lg"  onclick="handleClick('5')">5</button>
           </div>
           <div class="col">
-            <button type="button" id="6"class="btn1 btn btn-primary btn-lg">6</button>
+            <button type="button" id="6"class="btn1 btn btn-primary btn-lg"  onclick="handleClick('6')">6</button>
           </div>
           <div class="col">
-            <button type="button" id="*"class="btn1 btn btn-success btn-lg">*</button>
+            <button type="button" id="*"class="btn1 btn btn-success btn-lg"  onclick="handleClick('*')">*</button>
+          </div>
+          </div>
+          <div class="row mt-4">
+          <div class="col">
+            <button type="button" id="1"class="btn1 btn btn-primary btn-lg"  onclick="handleClick('1')">1</button>
           </div>
           <div class="col">
-            <button type="button" id="1"class="btn1 btn btn-primary btn-lg">1</button>
+            <button type="button" id="2"class="btn1 btn btn-primary btn-lg"  onclick="handleClick('2')">2</button>
           </div>
           <div class="col">
-            <button type="button" id="2"class="btn1 btn btn-primary btn-lg">2</button>
+            <button type="button" id="3"class="btn1 btn btn-primary btn-lg"  onclick="handleClick('3')">3</button>
           </div>
           <div class="col">
-            <button type="button" id="3"class="btn1 btn btn-primary btn-lg">3</button>
-          </div>
-          <div class="col">
-            <button type="button" id="-"class="btn1 btn btn-success btn-lg">-</button>
-          </div>
-          <div class="col">
-            <button type="button" id="0"class="btn1 btn btn-primary btn-lg">0</button>
-          </div>
-          <div class="col">
-            <button type="button" id="."class="btn1 btn btn-primary btn-lg">.</button>
-          </div>
-          <div class="col">
-            <button type="button" id="="class="btn1 btn btn-dark btn-lg">=</button>
-          </div>
-          <div class="col">
-            <button type="button" id="+"class="btn1 btn btn-success btn-lg">+</button>
+            <button type="button" id="-"class="btn1 btn btn-success btn-lg"  onclick="handleClick('-')">-</button>
           </div>
         </div>
+        <div class="row mt-4">
+          <div class="col">
+            <button type="button" id="0"class="btn1 btn btn-primary btn-lg"  onclick="handleClick('0')">0</button>
+          </div>
+          <div class="col">
+            <button type="button" id="."class="btn1 btn btn-primary btn-lg"  onclick="handleClick('.')">.</button>
+          </div>
+          <div class="col">
+            <button type="button" id="="class="btn1 btn btn-dark btn-lg"  onclick="handleClick('=')">=</button>
+          </div>
+          <div class="col">
+            <button type="button" id="+"class="btn1 btn btn-success btn-lg"  onclick="handleClick('+')">+</button>
+          </div>
+        </div>
+        
       </div>
     </div>
   </div>
