@@ -60,7 +60,21 @@ function calc(){
     let number01 = document.getElementById("txtNumber01").value;
     let number02 = document.getElementById("txtNumber02").value;
     let operator = document.getElementById("operator").value;
-    let lblOutput = document.getElementById("lblOutput");
+    let lblOutput = document.getElementById("lblOutput"); 
+
+function getVal(){
+    let val1 = document.getElementById("1").value;
+    let val2 = document.getElementById("2").value;
+    let val3 = document.getElementById("3").value;
+    let val4 = document.getElementById("4").value;
+    let val5 = document.getElementById("5").value;
+    let val6 = document.getElementById("6").value;
+    let val7 = document.getElementById("7").value;
+    let val8 = document.getElementById("8").value;
+    let val9 = document.getElementById("9").value;
+    let val0 = document.getElementById("0").value;
+}
+    
 
    let Output=0;
     switch(operator){
